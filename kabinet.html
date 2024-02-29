@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/banana_1f34c.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Проектик</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="header_logo-img"><a href="index.html"><img src="img/banana_1f34c.png" alt="банан">
+                        <div class="header_logo-text">Аренда автомобилей
+                            с выкупом
+                            №1 в Салехарде
+                    </a>
+                </div>
+            </div>
+            <div class="header_info-wrapper">
+                <div class="header_address">
+                    <div class="header_address-logo">
+                        <a target="_blank"
+                            href="https://yandex.ru/maps/58/salekhard/?ll=66.608997%2C66.531631&mode=poi&poi%5Bpoint%5D=66.601078%2C66.532670&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D236696142479&z=15.85">
+                            <svg width="19.267578" height="24.500000" viewBox="0 0 19.2676 24.5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="Vector"
+                                    d="M9.63379 0C7.07959 0.00305176 4.63086 1.01807 2.8252 2.82245C1.01904 4.62683 0.00292969 7.07324 0 9.625C0 17.8606 8.75781 24.0813 9.13086 24.3419C9.27832 24.4448 9.4541 24.5 9.63379 24.5C9.81396 24.5 9.98926 24.4448 10.1367 24.3419C10.5098 24.0813 19.2676 17.8606 19.2676 9.625C19.2646 7.07324 18.2485 4.62683 16.4429 2.82245C14.6367 1.01807 12.188 0.00305176 9.63379 0ZM9.63428 6.12531C10.3271 6.12531 11.0049 6.33057 11.5806 6.71515C12.1567 7.09973 12.606 7.64636 12.8711 8.28595C13.1362 8.92548 13.2056 9.62921 13.0703 10.3081C12.9351 10.9871 12.6016 11.6107 12.1118 12.1002C11.6216 12.5897 10.9976 12.923 10.3179 13.058C9.63818 13.1931 8.93408 13.1238 8.29395 12.8589C7.65381 12.594 7.10645 12.1454 6.72168 11.5698C6.33691 10.9943 6.13135 10.3176 6.13135 9.62531C6.13135 9.16571 6.22168 8.71057 6.39795 8.28589C6.57373 7.86127 6.83203 7.4754 7.15723 7.15039C7.48242 6.82538 7.86865 6.56763 8.29395 6.39172C8.71875 6.21582 9.17432 6.12531 9.63428 6.12531Z"
+                                    fill="#FAC643" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header_address-text"><a target="_blank"
+                            href="https://yandex.ru/maps/58/salekhard/?ll=66.608997%2C66.531631&mode=poi&poi%5Bpoint%5D=66.601078%2C66.532670&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D236696142479&z=15.85">
+                            Салехард, Ул.Ленина 228</a></div>
+                </div>
+                <div class="header_number">
+                    <div class="header_number-svg"><a href="tel:79924002185">
+                            <svg width="19.540039" height="19.519775" viewBox="0 0 19.54 19.5198" fill="#FAC643"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="Vector"
+                                    d="M18.5928 14.4313L15.7559 12.4508C15.3848 12.1927 14.9512 12.0563 14.5017 12.0563C13.7864 12.0563 13.1152 12.4066 12.7063 12.9927L12.0479 13.9357C10.9441 13.1962 9.71216 12.1635 8.53857 10.9909C7.36475 9.81812 6.33105 8.58765 5.59131 7.48492L6.53442 6.82715C7.52466 6.13824 7.76831 4.77148 7.0769 3.77985L5.09497 0.945923C4.68042 0.353516 4.01172 0 3.30591 0C3.06152 0 2.82178 0.0429688 2.59302 0.127319C2.33398 0.223267 2.09253 0.340515 1.85571 0.489014L1.46387 0.764526C1.36597 0.84082 1.2749 0.92395 1.18774 1.01111C0.709717 1.48853 0.370361 2.09265 0.179443 2.80701C-0.637207 5.86542 1.38574 10.4895 5.21313 14.3134C8.42725 17.5245 12.2886 19.5196 15.29 19.5198C15.2903 19.5198 15.2905 19.5198 15.2908 19.5198C15.8044 19.5198 16.2886 19.46 16.7302 19.3425C17.4453 19.1515 18.0498 18.8125 18.5271 18.3354C18.6145 18.2485 18.698 18.1573 18.7869 18.0422L19.0632 17.6483C19.1985 17.4316 19.3159 17.1902 19.4121 16.9309C19.7461 16.0294 19.4094 15.0015 18.5928 14.4313Z"
+                                    fill="#FAC643" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header_number-tel">
+                        <a href="tel:79924002185">8 (992) 400-21-85</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hamburger header__hamburger_open"> <!-- элемент для открытия мобильной навигации -->
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg class="hamburger hamburger--slider-r" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                        fill="#FAC643" />
+                </svg>
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="burger">
+            <span></span>
+        </div>
+        <nav class="header_nav">
+            <ul class="menu">
+                <li><a href="">Каталог автомобилей</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a href=""></a>Команда</li>
+                <div class="menu_logo">
+                    <div class="menu_logo-img">
+                        <a href=""><svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.98449 11.4627C4.21094 11.4717 0.262037 15.251 0.0235561 20.0272C0.0172081 20.1627 0.0385071 20.2981 0.0861568 20.4252C0.133807 20.5522 0.20681 20.6682 0.300725 20.7662C0.394639 20.8641 0.5075 20.9419 0.632438 20.9948C0.757375 21.0477 0.891777 21.0747 1.02746 21.074H16.9806C17.1156 21.0736 17.2492 21.0459 17.3732 20.9925C17.4972 20.9391 17.6091 20.8611 17.7022 20.7633C17.7953 20.6655 17.8676 20.5498 17.9148 20.4233C17.9619 20.2968 17.983 20.162 17.9767 20.0272C17.7379 15.245 13.7797 11.4632 9.00012 11.4627H8.98449Z"
+                                    fill="#FAC643" />
+                                <path
+                                    d="M9.00036 0.926025C6.46995 0.926025 4.407 2.99868 4.40698 5.53191C4.40698 8.06514 6.46993 10.1449 9.00036 10.1449C11.5308 10.1449 13.6009 8.06514 13.6009 5.53191C13.6009 2.99868 11.5308 0.926025 9.00036 0.926025Z"
+                                    fill="#FAC643" />
+                            </svg></a>
+                    </div>
+                    <div class="menu_logo-text">
+                        <li><a href="personal-kabinet.html">Личный кабинет</a></li>
+                    </div>
+
+                </div>
+
+            </ul>
+
+        </nav>
+
+
+    </header>
+    <div class="overlay"></div> <!-- блок затемнения области контента -->
+
+    <div class="mobile">
+        <!-- мобильная навигация -->
+        <div class="mobile__hamburger mobile__hamburger_close">
+
+            <!-- элемент для закрытия мобильной навигации -->
+            <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                class="hamburger hamburger--slider-r is-active">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 2px;
+                        }
+                    </style>
+                </defs>
+                <title />
+                <g id="cross">
+                    <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                    <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                </g>
+            </svg>
+
+            <span class="hamburger-box"><span class="hamburger-inner">
+        </div>
+        <div class="mobile__nav">
+            <ul>
+                <li><a href="">Каталог автомобилей</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Команда</a></li>
+                <div class="menu_logo">
+                    <div class="menu_logo-img">
+                        <a href="personal-kabinet.html"><svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.98449 11.4627C4.21094 11.4717 0.262037 15.251 0.0235561 20.0272C0.0172081 20.1627 0.0385071 20.2981 0.0861568 20.4252C0.133807 20.5522 0.20681 20.6682 0.300725 20.7662C0.394639 20.8641 0.5075 20.9419 0.632438 20.9948C0.757375 21.0477 0.891777 21.0747 1.02746 21.074H16.9806C17.1156 21.0736 17.2492 21.0459 17.3732 20.9925C17.4972 20.9391 17.6091 20.8611 17.7022 20.7633C17.7953 20.6655 17.8676 20.5498 17.9148 20.4233C17.9619 20.2968 17.983 20.162 17.9767 20.0272C17.7379 15.245 13.7797 11.4632 9.00012 11.4627H8.98449Z"
+                                    fill="black" />
+                                <path
+                                    d="M9.00036 0.926025C6.46995 0.926025 4.407 2.99868 4.40698 5.53191C4.40698 8.06514 6.46993 10.1449 9.00036 10.1449C11.5308 10.1449 13.6009 8.06514 13.6009 5.53191C13.6009 2.99868 11.5308 0.926025 9.00036 0.926025Z"
+                                    fill="black" />
+                            </svg></a>
+                    </div>
+                    <div class="menu_logo-text">
+                        <li><a href="personal-kabinet.html">Личный кабинет</a></li>
+                    </div>
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <section class="kabinet-info" id="kabinet-info">
+        <div class="container">
+            <h1 class="kabinet-nick">
+                Личный кабинет
+            </h1>
+            <div class="kabinet-info_wrapper">
+                <div class="kabinet-info-column">
+                    <div class="nickname-avatar">
+                        <div class="avatar"><img src="img/avatar.jpg" alt=""></div>
+                        <div class="nickavtr">
+                            <p class="nickname-column">Здравствуйте, Михаил Юрченко!</p>
+                            <p class="nickname-column">Ваш менеджер: Огурец Антон</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="kabinet-info-column">
+                    <a target="_blank" class="nickname-btn" href="https://vk.com/anton_anton_anton2">Написать
+                        менеджеру</a>
+                </div>
+            </div>
+            <h1 class="auto-info">Информация об арендовоном автомобиле</h1>
+            <div class="info-car_wrapper">
+                <div class="info-car_column">
+                    <p class="info-car-number">Номер: в004ко89</p>
+                    <p class="info-car-model">Марка: Lamborgini </p>
+                    <p class="info-car-year">Год выпуска: 2021</p>
+                    <p class="info-car-run">Пробег на момент заключения: 800м </p>
+                </div>
+                <div class="info-car_column color-info-car">
+                    <p class="info-car-price">Залог: 25 000 рублей</p>
+                    <p class="info-car-balance">Остаток к выкупу на 29.02.24 930 600 рублей</p>
+                    <p class="info-car-summ">Сумма на дату платежа 948 600 рублей</p>
+                </div>
+                <div class="info-car_column qr-color-f">
+                    <div class="pay_info">
+                    <p>Платеж на сумму 300$</p>
+                    <p> Аренда 17 500</p>
+                </div>
+                    <div class="qr-color">
+
+
+                        <a target="_blank" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79924002185">
+                            <div class="qr-pay">
+                                <img src="img/my_QR.png" alt="">
+                                <p>QR код для оплаты</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="cars" id="cars">
+        <div class="container">
+            <div class="main_info-cars">
+                <h1 class="cars-text"> Каталог автомобилей с пробегом</h1>
+                <a href="" class="main_text-button btn_cars-main">Смотреть Каталог</a>
+            </div>
+            <div class="cars_wrapper">
+                <div class="column_cars_wrapper">
+                    <div class="cars_line">
+                        <img class="cars_column_img" src="img/lamborghini-urus-yellow-1.jpg" alt="">
+                        <div class="cars_column">
+                            <div class="cars_run">Без пробега</div>
+                            <div class="cars_name">Lamborgini urus</div>
+                            <div class="cars_year">Год выпуска 2021</div>
+                            <div class="cars_price1 cars_price_wrapper">
+                                <div class="car_price_text-1">Аренда с выкупом</div>
+                                <div class="car_price_int">300$</div>
+                            </div>
+                            <div class="cars_price_credit cars_price_wrapper">
+                                <div class="car_price_text-1 car_price-space">Рассрочка</div>
+                                <div class="car_price_int car_price-space">300$</div>
+                            </div>
+                            <div class="cars_price_nal cars_price_wrapper">
+                                <div class="car_price_text-1">Наличные</div>
+                                <div class="car_price_int">300$</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <a href="" class="color_btn">
+                        Полные характеристики
+                    </a>
+                </div>
+
+                <div class="column_cars_wrapper">
+                    <div class="cars_line">
+                        <img class="cars_column_img" src="img/lamborghini-urus-yellow-1.jpg" alt="">
+                        <div class="cars_column">
+                            <div class="cars_run">Без пробега</div>
+                            <div class="cars_name">Lamborgini urus</div>
+                            <div class="cars_year">Год выпуска 2021</div>
+                            <div class="cars_price1 cars_price_wrapper">
+                                <div class="car_price_text-1">Аренда с выкупом</div>
+                                <div class="car_price_int">300$</div>
+                            </div>
+                            <div class="cars_price_credit cars_price_wrapper">
+                                <div class="car_price_text-1 car_price-space">Рассрочка</div>
+                                <div class="car_price_int car_price-space">300$</div>
+                            </div>
+                            <div class="cars_price_nal cars_price_wrapper">
+                                <div class="car_price_text-1">Наличные</div>
+                                <div class="car_price_int">300$</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="" class="back_gray">
+                        Полные характеристики
+                    </a>
+                </div>
+
+                <div class="column_cars_wrapper">
+                    <div class="cars_line">
+                        <img class="cars_column_img" src="img/lamborghini-urus-yellow-1.jpg" alt="">
+                        <div class="cars_column">
+                            <div class="cars_run">Без пробега</div>
+                            <div class="cars_name">Lamborgini urus</div>
+                            <div class="cars_year">Год выпуска 2021</div>
+                            <div class="cars_price1 cars_price_wrapper">
+                                <div class="car_price_text-1">Аренда с выкупом</div>
+                                <div class="car_price_int">300$</div>
+                            </div>
+                            <div class="cars_price_credit cars_price_wrapper">
+                                <div class="car_price_text-1 car_price-space">Рассрочка</div>
+                                <div class="car_price_int car_price-space">300$</div>
+                            </div>
+                            <div class="cars_price_nal cars_price_wrapper">
+                                <div class="car_price_text-1">Наличные</div>
+                                <div class="car_price_int">300$</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="" class="color_border">
+                        Полные характеристики
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="cars_mob">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 10px;">Каталог автомобилей</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="column_cars_wrapper">
+                            <div class="cars_line">
+                                <img class="cars_column_img" src="img/lamborghini-urus-yellow-1.jpg" alt="">
+                                <div class="cars_column">
+                                    <div class="cars_run">Без пробега</div>
+                                    <div class="cars_name">Lamborgini urus</div>
+                                    <div class="cars_year">Год выпуска 2021</div>
+                                    <div class="cars_price1 cars_price_wrapper">
+                                        <div class="car_price_text-1">Аренда с выкупом</div>
+                                        <div class="car_price_int">300$</div>
+                                    </div>
+                                    <div class="cars_price_credit cars_price_wrapper">
+                                        <div class="car_price_text-1 car_price-space">Рассрочка</div>
+                                        <div class="car_price_int car_price-space">300$</div>
+                                    </div>
+                                    <div class="cars_price_nal cars_price_wrapper">
+                                        <div class="car_price_text-1">Наличные</div>
+                                        <div class="car_price_int">300$</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <a href="" class="color_btn">
+                                Полные характеристики
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="column_cars_wrapper">
+                            <div class="cars_line">
+                                <img class="cars_column_img" src="img/lamborghini-urus-yellow-1.jpg" alt="">
+                                <div class="cars_column">
+                                    <div class="cars_run">Без пробега</div>
+                                    <div class="cars_name">Lamborgini urus</div>
+                                    <div class="cars_year">Год выпуска 2021</div>
+                                    <div class="cars_price1 cars_price_wrapper">
+                                        <div class="car_price_text-1">Аренда с выкупом</div>
+                                        <div class="car_price_int">300$</div>
+                                    </div>
+                                    <div class="cars_price_credit cars_price_wrapper">
+                                        <div class="car_price_text-1 car_price-space">Рассрочка</div>
+                                        <div class="car_price_int car_price-space">300$</div>
+                                    </div>
+                                    <div class="cars_price_nal cars_price_wrapper">
+                                        <div class="car_price_text-1">Наличные</div>
+                                        <div class="car_price_int">300$</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="" class="back_gray">
+                                Полные характеристики
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="column_cars_wrapper">
+                            <div class="cars_line">
+                                <img class="cars_column_img" src="img/lamborghini-urus-yellow-1.jpg" alt="">
+                                <div class="cars_column">
+                                    <div class="cars_run">Без пробега</div>
+                                    <div class="cars_name">Lamborgini urus</div>
+                                    <div class="cars_year">Год выпуска 2021</div>
+                                    <div class="cars_price1 cars_price_wrapper">
+                                        <div class="car_price_text-1">Аренда с выкупом</div>
+                                        <div class="car_price_int">300$</div>
+                                    </div>
+                                    <div class="cars_price_credit cars_price_wrapper">
+                                        <div class="car_price_text-1 car_price-space">Рассрочка</div>
+                                        <div class="car_price_int car_price-space">300$</div>
+                                    </div>
+                                    <div class="cars_price_nal cars_price_wrapper">
+                                        <div class="car_price_text-1">Наличные</div>
+                                        <div class="car_price_int">300$</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="" class="color_border">
+                                Полные характеристики
+                            </a>
+                        </div>
+
+                    </div>
+       
+                </div>
+        <div class="swiper-pagination"></div>
+            </div>
+ 
+        </div>
+
+    </section>
+
+    <section class="questions" id="questions">
+        <div class="questions_color">
+            <div class="container">
+                <div class="questions_wrapper">
+                    <div class="questions_column">
+                        <h1 class="questions_main-text">Остались вопросы? <span style="color: #FAC643;">Свяжитесь с нами
+                            </span></h1>
+                        <p class="questions-text">Если вы столкнулись с трудностями при работе с Бери Рули, у Вас есть
+                            какие-то замечания или предложения — позвоните.
+                            <span class="span mob-d">Прием звонков с 09:00 до 18:00</span>
+                        </p>
+
+                        <a class="questions-number mob-d" style="color: #FAC643;" href="tel:79924002185">+7 (992) 400 21
+                            85</a>
+                        <div class="quets_span">
+                            <span class="span">Прием звонков с 09:00 до 18:00</span>
+                            <a class="questions-number" style="color: #FAC643;" href="tel:79924002185">8 (992) 400 21
+                                85</a>
+                        </div>
+                    </div>
+                    <form class="questions_form">
+                        <div class="questions_form-name"><input type="text" placeholder="Ваше Имя">
+                        </div>
+
+                        <div class="questions_form-number questions_gap"><input type="tel" name=""
+                                placeholder="Ваш номер" id="">
+                        </div>
+
+                        <div class="questions_form-quest"><input type="text" placeholder="Ваш вопрос"></div>
+                        <div class="btn-quesion"><button type="submit">Задать вопрос</button></div>
+
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_address">
+                    <div class="footer_address-add">
+                        <a href="https://yandex.ru/maps/58/salekhard/?ll=66.608997%2C66.531631&mode=poi&poi%5Bpoint%5D=66.601078%2C66.532670&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D236696142479&z=15"
+                            target="_blank"><span style="color: #FAC643;">Салехард</span>, Ул. Ленина 228</a>
+                    </div>
+                    <div class="footer_main-office">Главный офис: <a
+                            href="https://yandex.ru/maps/58/salekhard/house/sovkhoznaya_ulitsa_15/Yk8YcAdkTUcPQFhsfXlycH9rZQ==/?ll=66.604652%2C66.531813&z=17.2"><span
+                                style="color: #FAC643;">ул.Совхозная 15</span>
+                            <span style="color: #FAC643;"></span></a></div>
+                    <div class="footer_jobtime">График работы: <a target="_blank"
+                            href="https://vk.com/im/convo/272969543?rp=peer272969543_photos&z=photo510235186_457250218%2Fb17830b64de17e352b"><span
+                                style="color: #FAC643;">Пн-Сб c 9:00 до 18:00</span></a>
+                    </div>
+                    <div class="footer_add-mail">E-mail: <a href="mailto:yapidor228@mail.ru"><span
+                                style="color: #FAC643;">mishaYurchenkoGAY@gmail.com</span></a></div>
+                    <div class="footer_number"><a href="tel:+79924002185">+7 (992) 400 21 85</a></div>
+                </div>
+                <div class="footer_nav">
+                    <nav class="ft-item">
+                        <ul>
+                            <li><a href="">Каталог автомобилей</a></li>
+                            <li><a href="">Вакансии</a></li>
+                            <li><a href="">Новости</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <nav class="ft-item">
+                    <ul>
+                        <li><a href="">Контакты</a>
+                        </li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">О компании</a></li>
+                    </ul>
+                </nav>
+
+                <a class="btn_to_start" href="#header">
+                    <img src="img/Иконка_стрелки_вверх_(ei).svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
